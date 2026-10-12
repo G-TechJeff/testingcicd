@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compassion Africa Initiative</title>
+       <link rel="stylesheet" href="styles/styles.css?v=2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/favicon.png">
+    <!-- Font Awesome CDN for version 6+ -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+    <!-- ************************************* -->
+    <!-- ********** HEADER (NAVBAR) ********** -->
+    <!-- ************************************* -->
+    <header class="main">
+        <div class="lower">
+            <div class="image">
+                <div class="logoContainer" onclick="">
+                    
+                    
+                
+
+                <!-- Light Mode Logo -->
+                <img src="assets/logos/logo-Photoroom.png" alt="Logo Light" class="logo light-logo">
+
+                <!-- Dark Mode Logo -->
+                <img src="assets/logos/afriwhite.png"  alt="Logo Dark" class="logo dark-logo">
+            </div>
+        </div>
+
+            <!-- Mobile Menu Icon (For Mobile Only) -->
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+            <!-- Mobile Menu -->
+            <div class="mobile-menu">
+                <div class="menu-header">
+                    <div class="menu-close" onclick="toggleMenu()">&times;</div>
+                </div>
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/causes.html">Our Work</a>
+                <a href="pages/events.html">News</a>
+                <!-- <a href="pages/news.html">News</a> -->
+                <a href="pages/contact.html">Contact</a>
+
+                <div class="socials mobileBtn">
+                    <div class="login">
+                        <button type="button" class="navBtn btn btn-outline-danger" onclick="redirectToPage()">Donate
+                            Now</button>
+                    </div>
+
+                    <div>
+                        <a href="pages/login.html">
+                            <button type="button" class="navBtn btn btn-outline-danger">Login Here</button>
+                        </a>
+                    </div>
+
+                    <div>
+                        <button type="button" class="navBtn btn btn-danger" data-bs-toggle="modal"
+                            data-bs-target="#exampleModal">Contact Info</button>
+                    </div>
+                    <div>
+                        <button id="themeToggle" class="navBtn btn btn-danger" onclick="toggleTheme()">
+                            <i class="themeIcon fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Desktop Navbar -->
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="pages/about.html">About</a>
+                <a href="pages/causes.html">Our Work</a>
+                <a href="pages/events.html">News</a>
+                <!-- <a href="pages/news.html">News</a> -->
+                <a href="pages/contact.html">Contact</a>
+            </nav>
+        </div>
+
+        <!-- Social & Login Buttons -->
+        <div class="socials desktopBtn">
+            <!-- <div class="login">
+                <button type="button" class="navBtn btn btn-outline-danger" onclick="redirectToPage()">Donate
+                    Now</button>
+            </div>
+
+            <div>
+                <a href="pages/login.html">
+                    <button type="button" class="navBtn btn btn-outline-danger">Login</button>
+                </a>
+            </div>
+
+            <div>
+                <button type="button" class="navBtn btn btn-danger" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">Contact Info</button>
+            </div> -->
+            <div>
+                <button id="themeToggle" class="navBtn btn btn-danger" onclick="toggleTheme()">
+                    <i class="themeIcon fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true"
+            data-bs-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Contact Information</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Phone No: +254745811219</p>
+                        <p>Email:  compassionafricaintiative@gmail.com</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ************************************* -->
+    <!-- *********** LANDING PAGE ************ -->
+    <!-- ************************************* -->
+    <main>
+        <div class="mainbox">
+            <div class="text-content">
+                <p id="heading"><b><u style="text-decoration-color: rgb(27, 153, 44); text-decoration-line: bold;">Compassion </u>
+                    Africa Initiative</b></p>
+                <p class="subsection">A green, healthy community.</p>
+                <p id="text" class="subsection">
+                    Picture a generation of young Africans who don't just talk about climate change—but take action. At Compassion Africa Initiative, we empower youth to lead the way in environmental conservation and healthy living through hands-on training in tree growing, waste management, and sustainable agriculture. 
+                </p>
+                <button class="donate-btn" onclick="">Donate now</button>
+                
+            </div>
+            <div class="img-slider-container">
+                <div class="intro1">
+                    <img src="assets/activities/Mazingira Day Janice.jpg" alt="RC-Juja planting a fruit">
+                    <!--
+                    <img src="assets/activities/ASA teams.JPG" alt="RSC Membership Secretary plants a seedling.">                    
+                    <img src="assets/activities/ASA Rhodah.JPG" alt="RC-Juja planting a fruit">
+                    <img src="assets/activities/cai-team&friends.jpg" alt="CAI volunteers and friends">
+                    <img src="assets/activities/ngaile-min.jpg" alt="The R&D mananger">
+                    <img src="assets/activities/cai-teamy1.jpg" alt="Youth leaders">
+                    <img src="assets/activities/ASA team RUJIWASCO.JPG" alt="The R&D mananger">
+                    <img src="assets/activities/ASA youth.JPG" alt="The R&D mananger">
+                    <img src="assets/activities/rotaryJuja-min.jpg" alt="RC-Juja planting a fruit">
+                <img src="assets/activities/RSC-membership-Secretary.jpg" alt="RSC Membership Secretary plants a seedling.">    -->
+                </div>
+            </div>
+            
+        </div>
+    </main>
+    
+   
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const slider = document.querySelector('.img-slider');
+            const images = slider.querySelectorAll('img');
+            let currentIndex = 0;
+            
+            // Preload images to prevent blank flashes during transition
+            images.forEach(img => {
+                const image = new Image();
+                image.src = img.src;
+            });
+    
+            function showNextImage() {
+                // Randomly select next image (but not the same as current)
+                let nextIndex;
+                do {
+                    nextIndex = Math.floor(Math.random() * images.length);
+                } while (nextIndex === currentIndex && images.length > 1);
+                
+                // Fade out current image with animation
+                images[currentIndex].style.opacity = 0;
+                images[currentIndex].style.transform = 'translateX(-20px) scale(0.95)';
+                images[currentIndex].style.filter = 'brightness(0.9)';
+                
+                // Fade in next image with animation
+                images[nextIndex].style.opacity = 1;
+                images[nextIndex].style.transform = 'translateX(0) scale(1)';
+                images[nextIndex].style.filter = 'brightness(1)';
+                images[nextIndex].style.zIndex = '1';
+                
+                // Reset z-index after animation
+                setTimeout(() => {
+                    images[currentIndex].style.zIndex = '0';
+                }, 1500);
+                
+                currentIndex = nextIndex;
+                
+                // Set random interval for next transition (between 3-6 seconds)
+                const nextInterval = 3000 + Math.random() * 3000;
+                setTimeout(showNextImage, nextInterval);
+            }
+    
+            // Start the slider with random interval
+            const initialInterval = 3000 + Math.random() * 3000;
+            setTimeout(showNextImage, initialInterval);
+        });
+    </script>
+
+    <!-- ************************************* -->
+    <!-- ********** DONATION CARDS *********** -->
+    <!-- ************************************* -->
+    <main class="third">
+        <!-- Donation Cards Container -->
+        <!-- <h3 class="subsection">At Compassion Africa Initiative, we take action where it matters most</h3> -->
+        <div class="cards">
+            
+
+                    <!-- Donation Card 1 -->
+            <div class="card1" style="background-color: rgb(203, 217, 232);">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-egg-fried" viewBox="0 0 16 16">
+                        <path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                        <path
+                            d="M13.997 5.17a5 5 0 0 0-8.101-4.09A5 5 0 0 0 1.28 9.342a5 5 0 0 0 8.336 5.109 3.5 3.5 0 0 0 5.201-4.065 3.001 3.001 0 0 0-.822-5.216zm-1-.034a1 1 0 0 0 .668.977 2.001 2.001 0 0 1 .547 3.478 1 1 0 0 0-.341 1.113 2.5 2.5 0 0 1-3.715 2.905 1 1 0 0 0-1.262.152 4 4 0 0 1-6.67-4.087 1 1 0 0 0-.2-1 4 4 0 0 1 3.693-6.61 1 1 0 0 0 .8-.2 4 4 0 0 1 6.48 3.273z" />
+                    </svg>
+                </div>
+                <p id="donate">Championing</p>
+                <h3>Environmental Conservation</h3>
+                <p><a href="#" class="details-link">More details..</a></p>
+                
+                <div class="collapsible-content">
+                    <p>We empower youth to lead Africa's green revolution through hands-on tree nurseries, waste management programs, and eco-education. Our initiatives combine environmental action with mental health support, creating resilient young stewards for sustainable development.</p>
+                </div>
+            </div>            
+
+            <!-- Donation Card 2-->
+            <div class="card1" style="background-color: rgb(186, 216, 188);">
+                <div class="circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
+                        class="bi bi-prescription2" viewBox="0 0 16 16">
+                        <path d="M7 6h2v2h2v2H9v2H7v-2H5V8h2z" />
+                        <path
+                            d="M2 1a1 1 0 0 1 1-1h10a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v10.5a1.5 1.5 0 0 1-1.5 1.5h-7A1.5 1.5 0 0 1 3 14.5V4a1 1 0 0 1-1-1zm2 3v10.5a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 .5-.5V4zM3 3h10V1H3z" />
+                    </svg>
+                </div>
+                <p id="donate">Advocating for</p>
+                <h3>Public Health</h3>
+                <p><a href="#" class="details-link">More details..</a></p>
+                
+                <div class="collapsible-content">
+                    <p>We promote community health through education, preventive care initiatives, and improved healthcare access. Our programs address critical health disparities while fostering holistic well-being in underserved African communities.</p>
+                </div>
+            
+            </div>           
+            <p></p>
+            <style>
+                .collapsible-content {
+                    max-height: 0;
+                    overflow: hidden;
+                    padding: 0 15px;
+                    margin-top: 0;
+                    background-color: rgba(255,255,255,0.3);
+                    border-radius: 8px;
+                    transition: all 0.3s ease-out;
+                }
+                
+                .collapsible-content.active {
+                    max-height: 600px;
+                    padding: 15px;
+                    margin-top: 10px;
+                }
+                
+                .details-link {
+                    cursor: pointer;
+                }
+            </style>
+
+            <script>
+                document.querySelectorAll('.details-link').forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const content = this.closest('.card1').querySelector('.collapsible-content');
+                        content.classList.toggle('active');
+                        this.textContent = content.classList.contains('active') ? 'Less details..' : 'More details..';
+                    });
+                });
+            </script>
+
+        </div>
+    </main>
+
+        <div class="contento">
+            <p class="p2"></p>
+        </div> 
+    
+
+    <!-- ************************************* -->
+    <!-- ********** POVERTY SECTION ********** -->
+    <!-- ************************************* -->
+    <main>
+        <div class="sad">
+            <!-- Pictures Section -->
+            <div class="poverty">
+                <img class="povert" src="assets/activities/ASA youth.JPG" alt="Poverty">
+            </div>
+
+            <!-- Content -->
+            <!-- <p id="upper">Check here</p> -->
+            <div class="para">
+                <h2 style="font-size: 3rem; margin-bottom: 25px; font-weight: 600;">A sustainable,  <u
+                        style="text-decoration-color: rgb(212, 231, 38); text-decoration-thickness: 5px;">healthy</u> community.</h2>
+                <p
+                    style="font-size: 1.7rem; margin-bottom: 15px; color: rgb(84, 163, 168); font-weight: 500; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Why So Serious?</p>
+                <p>Compassion Africa Initiative is a youth led non-profit organization  nurturing a young African 
+                    generation of environmental stewards and health advocates.<br> By partnering with learning institutions,
+                     we establish tree nurseries, promote solid waste management, and foster public health,
+                     to inspire sustainable living.  Together, we’re growing a movement where communities conserve their
+                      environment and prioritize health, one tree and one life at a time. Join us in planting the seeds of change!</p>
+                
+                <div class="button">
+                    
+                    <button 
+                    type="button" 
+                    onclick="window.location.href='pages/about.html'" 
+                    class="btn btn-danger btn-lg paraLearn"
+                    >
+                    Learn more
+                    </button>
+                    <!-- <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="crimson"
+                        class="bi bi-play-circle" viewBox="0 0 16 16">
+                        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                        <path
+                            d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445" />
+                    </svg> -->
+                    <!-- <p>How we work</p> -->
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- ************************************* -->
+    <!-- ********** News SECTION ********** -->
+    <!-- ************************************* -->
+    <main class="fourth">
+
+        <!-- Title and Subtitle -->
+        <div class="events">
+            <div class="head2">
+                <p id="upper">our News</p>
+                <p>Join our upcoming <u
+                        style="text-decoration-color: goldenrod; text-decoration-thickness: 6px;">events</u></p>
+                <p></p>
+            </div>
+        </div>
+
+        <!-- News Container -->
+        <div class="events-cards2">
+
+            <!-- Right News Section -->
+            <div class="events-rightcards">
+                <div class="events-image">
+                    <img src="./assets/activities/Beyond the waste.jpg" alt="The Dinner Poster">
+                </div>
+                <!-- Right News Card 1 -->
+                <div class="events-rcard">
+                    <div class="events-text1">
+                        <h6>Waste isn't the end of the story. For young people, it's where opportunity begins.</h6>
+                        <h4> </h4>
+                        <p> Compassion Africa Initiative invites you to Beyond the Waste, a youth forum on
+                             waste management and the opportunities within it. Hear from experts and
+                              industry practitioners, listen to real stories from people already working 
+                              in the sector, and join panel discussions on how waste can become income, jobs and impact.</p>
+                    </div>
+                    <div class="events-icon-wrapper">
+                        <div class="events-icon-text">
+                            <span><i class="fas fa-calendar-alt"></i></span>
+                            <div>
+                                <h5>Date</h5> 31st October, 2026.
+                                <br> <br>
+                                <div class="info-card" style="background-color: rgb(82, 148, 79);">            
+                                <a href="https://wa.me/254745811219" target="_blank" rel="noopener noreferrer">Attend</a>
+                                 </div>
+                            </div>
+                        </div>
+        
+                        <!--<div class="events-icon-text">
+                            <span><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <h6>Location</h6>
+                                <p>Verona Hotel</p>
+                            </div>
+                        </div>-->
+                          
+
+                    </div>
+                </div>        
+            </div>
+
+            <!-- Left News Section -->
+                  
+    </main>
+
+    <div class="break"></div>
+
+    
+    <div class="break2"></div>
+
+    <!-- ************************************* -->
+    <!-- ******** INFORMATION BANNER ********* -->
+    <!-- ************************************* -->
+    <main>
+        <div class="horizontal">
+            <div class="bar">
+                <!-- Total Campaigns -->
+                <div class="cont1 ok">
+                    <svg style="margin-top: 20px; margin-bottom: 15px;" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-megaphone-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M13 2.5a1.5 1.5 0 0 1 3 0v11a1.5 1.5 0 0 1-3 0zm-1 .724c-2.067.95-4.539 1.481-7 1.656v6.237a25 25 0 0 1 1.088.085c2.053.204 4.038.668 5.912 1.56zm-8 7.841V4.934c-.68.027-1.399.043-2.008.053A2.02 2.02 0 0 0 0 7v2c0 1.106.896 1.996 1.994 2.009l.496.008a64 64 0 0 1 1.51.048m1.39 1.081q.428.032.85.078l.253 1.69a1 1 0 0 1-.983 1.187h-.548a1 1 0 0 1-.916-.599l-1.314-2.48a66 66 0 0 1 1.692.064q.491.026.966.06" />
+                    </svg>
+                    <h1>5</h1>
+                    <p style="font-size: 1.5rem; opacity: 70%; font-weight: 500;">Total Campaigns</p>
+                </div>
+
+                <!-- Happy Volunteers -->
+                <div class="cont1">
+                    <svg style="margin-top: 20px; margin-bottom: 15px;" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-hand-thumbs-up" viewBox="0 0 16 16">
+                        <path
+                            d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2 2 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a10 10 0 0 0-.443.05 9.4 9.4 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a9 9 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.2 2.2 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.9.9 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
+                    </svg>
+                    </svg>
+                    <h1>294</h1>
+                    <p style="font-size: 1.5rem; opacity: 70%; font-weight: 500;">Happy Volunteers</p>
+                </div>
+
+                <!-- Funds Raised -->
+                <!-- <div class="cont1">
+                    <svg style="margin-top: 25px; margin-bottom: 10px;" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd"
+                            d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0" />
+                        <path
+                            d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195z" />
+                        <path
+                            d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083q.088-.517.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z" />
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 6 6 0 0 1 3.13-1.567" />
+                    </svg>
+                    <h1>300</h1>
+                    <p style="font-size: 1.5rem; opacity: 70%; font-weight: 500;">Funds Raised</p>
+                </div> -->
+
+                <!-- Satisfied Donors -->
+                <div class="cont1">
+                    <svg style="margin-top: 20px; margin-bottom: 15px;" xmlns="http://www.w3.org/2000/svg" width="50"
+                        height="50" fill="currentColor" class="bi bi-emoji-smile-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16M7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5M4.285 9.567a.5.5 0 0 1 .683.183A3.5 3.5 0 0 0 8 11.5a3.5 3.5 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.5 4.5 0 0 1 8 12.5a4.5 4.5 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683M10 8c-.552 0-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5S10.552 8 10 8" />
+                    </svg>
+                    <h1>120</h1>
+                    <p style="font-size: 1.5rem; opacity: 70%; font-weight: 500;">Students Trained</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <div class="break no2  dark-bg"></div>
+
+    <!-- ************************************* -->
+    <!-- *********** NEWS SECTION ************ -->
+    <!-- ************************************* -->
+    <main>
+        <div style="background: linear-gradient(rgb(216, 234, 221) 60% , transparent 30%) no-repeat; margin-top: 0px; height: fit-content"
+            class="events events-primary">
+
+            <!-- Title and Subtitle -->
+            <div class="head2">
+                <p id="upper"
+                    style="opacity: 70%; font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+                    Our Latest Events</p>
+                <p>Check our latest <u
+                        style="text-decoration-color: goldenrod; text-decoration-thickness: 6px;">events</u></p>
+                <p>and updates</p>
+            </div>
+
+            <!-- News Cards Container -->
+            <div class="cards3">
+
+                
+                <!-- News Card Mazingira Day -->
+                
+                <div class="leftcard1">
+                    <img src="assets/activities/Mazingira Day.jpg" style="margin-bottom: 20px; height: 260px; width: 100%;" alt="CAI Partners with Environmental Club Kambui Secondary School">
+                    <div class="padding" style="padding-left: 5px; padding-right: 5px;">
+                        
+                        <div class="text">
+                            <h1 style="color: rgb(20, 100, 220);margin-bottom: 15px; font-size: 1.2rem;">National Mazingira Day, 2026. </h1>
+                            
+                            <p style="width: 100%; margin-bottom: 20px;">This National Mazingira Day, 
+                                Compassion Africa Initiative marked the occasion with action on the ground. 
+                                We transplanted seedlings, and now we wait for the rains to help them take 
+                                root and grow. Caring for the environment doesn’t end with planting a tree;
+                                 it continues with the nurturing that follows. Thank you to everyone who
+                                  joined us in building a greener tomorrow.<br>
+                               <!--This partnership underscores our dedication to fostering youth-led environmental action and sustainable community engagement.</p>--> 
+                        </div>
+                        <div class="icons">
+                            
+                            
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Date</h6>
+                                <p style="margin-bottom: 20px;">October 10th, 2026.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- News Card 2 -->
+                
+                <div class="leftcard1">
+                    <img src="assets/activities/Kambui Sec Sch.jpg" style="margin-bottom: 20px; height: 260px; width: 100%;" alt="CAI Partners with Environmental Club Kambui Secondary School">
+                    <div class="padding" style="padding-left: 5px; padding-right: 5px;">
+                        
+                        <div class="text">
+                            <h1 style="color: rgb(20, 100, 220);margin-bottom: 15px; font-size: 1.2rem;">Partnership </h1>
+                            <h4 style="margin-bottom: 15px;">
+                                CAI Partners with Environmental Club Kambui Secondary School.</h4>
+                            <p style="width: 100%; margin-bottom: 20px;">Compassion Africa Initiative recently held a partnership event with the Environmental Club Kambui Secondary School, 
+                                bringing together participants, partners and the school community. The day was about reaching more people and growing wider, and it ended with a lasting mark on the school grounds.<br>
+                               <!--This partnership underscores our dedication to fostering youth-led environmental action and sustainable community engagement.</p>--> 
+                        </div>
+                        <div class="icons">
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Location:</h6>
+                                <p style="margin-bottom: 20px;">Kambui Secondary School</p>
+                            </div>
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Date</h6>
+                                <p style="margin-bottom: 20px;">October 2, 2026.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <!-- News Card 2 -->
+                
+                <div class="leftcard1">
+                    <img src="assets/activities/A Soul SAS.JPG" style="margin-bottom: 20px; height: 260px; width: 100%;" alt="A tree planting day at the All Souls School at Ndeiya">
+                    <div class="padding" style="padding-left: 5px; padding-right: 5px;">
+                        <div class="text">
+                            <h1 style="color: rgb(31, 120, 41); font-size: 1.2rem;">Ndeiya, Limuru</h1>
+                            
+                            <p style="width: 100%; ">
+                                <br>
+                                A visit to All Souls School in Ndeiya, Limuru, where we were joined by the <a href="https://www.limuruwater.go.ke/">Limuru Water and Sewerage Company Limited (LWSC)    
+                                </a> planting fruit trees among indigenous trees at the school compound and orchard.
+                                <br>
+                               <!--This partnership underscores our dedication to fostering youth-led environmental action and sustainable community engagement.</p>--> 
+                        </div>
+                        <div class="icons">
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Location:</h6>
+                                <p style="margin-bottom: 20px;">All Souls School</p>
+                            </div>
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Date</h6>
+                                <p style="margin-bottom: 20px;"> 23 May, 2026.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- News Card 1 -->
+                <div class="leftcard1">
+                    <img src="assets/activities/RC-juja1.jpg" style="margin-bottom: 20px; height: 260px; width: 100%;" alt="..">
+                    <div class="padding" style="padding-left: 5px; padding-right: 5px;">
+                        <div class="text">
+                            <h1 style="color: rgb(59, 117, 45);margin-bottom: 15px; font-size: 1.2rem;"># Environment</h1>
+                            <h2 style="margin-bottom: 15px;">A Community Day.</h2>
+                            <p style="width: 100%; margin-bottom: 20px;">Compassion Africa Initiative volunteers, in 
+                                partnership with Rotary Club of Juja, The Ruiru Sports Club and Finsco Africa, brought together volunteers,
+                                 youth environmental stewards, and guests for a transformative Community Day at Ruiru Sports Club.
+                                 <br>
+                                Together, we planted fruit and indigenous trees across the grounds, 
+                                fostering not just a greener future but also lasting friendships among the youth. Every 
+                                seedling symbolizes hope, unity, and our commitment to a sustainable planet.</p>
+                        </div>
+                        <div class="icons">
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-geo-alt" viewBox="0 0 16 16">
+                                <path
+                                    d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A32 32 0 0 1 8 14.58a32 32 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10" />
+                                <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4m0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Location:</h6>
+                                <p style="margin-bottom: 20px;">Ruiru Sports Club</p>
+                            </div>
+                            <svg style="margin-top: 6px;" xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+                                fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+                                <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+                            </svg>
+                            <div class="Location">
+                                <h6 style="margin-bottom: 1px; margin-left: 5px;">Date</h6>
+                                <p style="margin-bottom: 20px;"> 09 May, 2021.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+
+                
+            </div>
+        </div>
+    </main>
+
+    <!-- ************************************* -->
+    <!-- ************** FOOTER *************** -->
+    <!-- ************************************* -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h5><i>The future grows where compassion meets action.</i></h5>
+                <p>Your hands hold power—volunteer, donate, or share our mission, and together we’ll build a sustaiable community. </p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/about.html">About</a></li> <!-- Updated link -->
+                    <li><a href="./pages/causes.html">Our Work</a></li>
+                    <li><a href="./pages/events.html">News</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:example@example.com">compassionafricaintiative@gmail.com</a></p>
+                <p>Phone: +254745 811 219</p>
+                <div class="footer-socials">
+                    <a href="https://web.facebook.com/profile.php?id=61568890509588" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <!-- <a href="#" aria-label="Twitter"><svg className="h-5 w-5" viewBox="0 0 24 24" fill="currentColor" style="width: 18px;"> -->
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </svg></a>
+                    <a href="https://www.instagram.com/_compassionafricainitiative/?hl=en" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/company/145204158/admin/page-posts/published/" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>    
+                    <a href="https://www.tiktok.com/@compassionafricai" aria-label="Tiktok"><i class="fab fa-tiktok"></i></a>    
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="currentYear"></span> Compassion Africa Initiative. All Rights Reserved.</p>
+        </div>
+        <div id="scrollToTop">
+            <svg class="progress-circle" width="50" height="50">
+                <circle cx="25" cy="25" r="22"></circle>
+                <circle cx="25" cy="25" r="22" id="progress"></circle>
+            </svg>
+            <span class="arrow">▲</span>
+        </div>
+    </footer>
+
+    <!-- ************************************* -->
+    <!-- ***** JAVASCRIPT FOR THIS PAGE ****** -->
+    <!-- ************************************* -->
+    <script src="app.js"></script>
+    <script>
+        function redirectToPage() {
+            window.open('pages/donation.html'); // Replace with your HTML file name
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script>
+        function toggleMenu() {
+            document.querySelector('.mobile-menu').classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener("click", function (event) {
+            let menu = document.querySelector('.mobile-menu');
+            let icon = document.querySelector('.menu-icon');
+            if (!menu.contains(event.target) && !icon.contains(event.target)) {
+                menu.classList.remove('active');
+            }
+        });
+
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+
+</body>
+
+</html>
